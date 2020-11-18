@@ -18,7 +18,7 @@ $connectionOptions = array(
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 $tsql= "SELECT * FROM Customers";
 $getResults= sqlsrv_query($conn, $tsql);
-$row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)
+$row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
 echo $row;
 //if ($getResults == FALSE)
 //    echo (sqlsrv_errors());
