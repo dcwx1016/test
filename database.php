@@ -18,7 +18,7 @@ $connectionOptions = array(
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 $tsql= "SELECT * FROM Customers";
 $getResults= sqlsrv_query($conn, $tsql);
-
+echo 'HI';
 echo ("Reading data from table" . PHP_EOL);
 //if ($getResults == FALSE)
 //    echo (sqlsrv_errors());
